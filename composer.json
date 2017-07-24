@@ -2,7 +2,7 @@
     "name": "floriansemm/expose-bundle",
     "type": "library",
     "autoload": {
-        "psr-4": {
+        "psr-0": {
             "FS\\": ""
         }
     },
