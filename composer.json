@@ -7,7 +7,7 @@
         }
     },
     "require": {
-        "symfony/symfony": "^2.8",
+        "symfony/symfony": "^2.8|^3.0",
         "enygma/expose": "^3.0"
     },
     "license": "MIT",
