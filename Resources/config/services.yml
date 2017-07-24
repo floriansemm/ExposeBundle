@@ -1,0 +1,16 @@
+services:
+    expose.manager_factory:
+        class: 'FS\ExposeBundle\ManagerFactory'
+        arguments: ['@logger']
+        tags:
+            - { name: monolog.logger, channel: expose }
+
+    expose.manager:
+        class: Expose\Manager
+        factory: 'expose.manager_factory:createDefaultManager'
+
+    expose.request_listener:
+        class: 'FS\ExposeBundle\EventListener\IntrusionDetectionListener'
+        arguments: ['@expose.manager', '%expose.request_suspension_threshold%']
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller }

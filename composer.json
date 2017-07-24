@@ -1,0 +1,15 @@
+{
+    "name": "floriansemm/expose-bundle",
+    "type": "library",
+    "require": {
+        "symfony/symfony": "2.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "floriansemm",
+            "email": "floriansemm@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
