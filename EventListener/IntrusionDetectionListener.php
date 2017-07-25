@@ -67,6 +67,10 @@ class IntrusionDetectionListener
             $handler->handleIntrusion($this->manager->getImpact(), $this->manager->getReports());
         }
 
+        if ($this->threshold === 0) {
+            return;
+        }
+
         if ($this->manager->getImpact() >= $this->threshold) {
             throw new IntrusionException();
         }
