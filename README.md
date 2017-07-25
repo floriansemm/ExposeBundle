@@ -18,7 +18,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new FS\SolrBundle\FSExposeBundle(),
+        new FS\ExposeBundle\FSExposeBundle(),
     );
 }
 ```
