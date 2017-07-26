@@ -2,7 +2,7 @@
 
 Integrates the [expose](https://github.com/enygma/expose) project into symfony. It allows you to register handlers to respond to reports for the current request. (to block users/ips, send notifications, etc.)
 
-The bundle throws an exception if the impact for the current request is greater than the configured threshold.
+The bundle add a "suspend request" feature. If is the impact for the current request greater than the configured threshold (default is 7), then an `IntrusionException` will be thrown. All registered handlers will be executed before this check throws the exception.
 
 # Installation
 
