@@ -23,7 +23,7 @@ public function registerBundles()
 }
 ```
 
-Add the bundle to your `config.yml`
+Add the configuration to your `config.yml`
 
 ```yaml
 fs_expose: ~
