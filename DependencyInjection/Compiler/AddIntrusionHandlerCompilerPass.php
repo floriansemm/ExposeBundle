@@ -2,11 +2,11 @@
 
 namespace FS\ExposeBundle\DependencyInjection\Compiler;
 
-use Liip\ImagineBundle\DependencyInjection\Compiler\AbstractCompilerPass;
+use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
 
-class AddIntrusionHandlerCompilerPass extends AbstractCompilerPass
+class AddIntrusionHandlerCompilerPass implements CompilerPassInterface
 {
     const SERVICE_TAG_NAME = 'expose.intrusion_handler';
 

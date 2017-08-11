@@ -64,7 +64,7 @@ class IntrusionDetectionListener
         }
 
         foreach ($this->handlerConfigs as $handler) {
-            $handler->handleIntrusion($this->manager->getImpact(), $this->manager->getReports());
+            $handler->handleIntrusion($request, $this->manager->getImpact(), $this->manager->getReports());
         }
 
         if ($this->threshold === 0) {
